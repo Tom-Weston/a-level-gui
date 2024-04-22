@@ -1,0 +1,53 @@
+.main-container{
+	width: 50%;
+}
+
+/* ---< NAME >--- */
+
+/* 2x2 grid */
+.two-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0;
+}
+
+/* Ordering labels and inputs in-line vertically */
+.two-grid * {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 0.5fr 0.4fr;
+}
+
+.display-format {
+	display: grid;
+	grid-template-columns: max-content auto;
+	gap: 26px;
+	margin-right: 19px;
+}
+
+/* ---< E-MAIL >--- */
+.email-container {
+	display: grid;
+	gap: 10px;
+	width: 100%;
+	grid-template-columns: 4fr 1fr;
+}
+
+.email-left, .email-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.long-input {
+	height: 89px
+}
+
+.email-right * {
+	width: 100px;
+	height: 30px;
+	margin: 4px;
+}
+
+.email-container * {
+	display: flex;
+}

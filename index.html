@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Preview</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Name</h1>
-    <form action="">
-        <p>First Name <input type="text"></p>
-    </form>
+    <div class="main-container">
+        <h2>Name</h2>
+        <form action="" method="post">
+            <div class="two-grid">
+                <p>First Name: <input type="text"></p>
+                <p>Last Name: <input type="text"></p>
+                <p>Title: <input type="text"></p>
+                <p>Nickname: <input type="text"></p>
+            </div>
+            <div class="display-format">
+                Display Format:
+                <select name="" id="">
+                    <option value="1">Item 1</option>
+                    <option value="2">Item 2</option>
+                    <option value="3">Item 3</option>
+                    <option value="4">Item 4</option>
+                    <option value="5">Item 5</option>
+                </select>
+            </div>
+        </form>
+
+        <h2>E-mail</h2>
+        <form  action="" method="post">
+            <div class="email-container">
+                <div class="email-left">
+                    <p>E-mail Address: <input type="email"></p>
+                    <textarea rows="6" cols="50"></textarea>
+                </div>
+                <div class="email-right">
+                    <input type="button" value="Add">
+                    <input type="button" value="Edit">
+                    <input type="button" value="Remove">
+                    <input type="button" value="As Default">
+                </div>
+            </div>
+            <div>
+                <p>Mail Format:</p>
+                <input type="radio"> HTML
+                <input type="radio"> Plain Text
+                <input type="radio"> Custom
+            </div>
+        </form>
+    </div>
 </body>
 </html>
